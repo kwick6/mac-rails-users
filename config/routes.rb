@@ -4,6 +4,9 @@ resources :posts do
     resources :comments
   end
 
+resources :comments
+
+get '/all', :to => 'comments#index', :as => 'all'
 
   get "home/index"
 

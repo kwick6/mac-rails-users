@@ -4,7 +4,6 @@
   <tr>
     <th>Commenter</th>
     <th>Body</th>
-    <th>Post</th>
     <th></th>
     <th></th>
     <th></th>
@@ -14,8 +13,6 @@
   <tr>
     <td><%= comment.commenter %></td>
     <td><%= comment.body %></td>
-    <td><%= comment.post %></td>
-    <td><%= link_to 'Show', comment %></td>
     <td><%= link_to 'Edit', edit_comment_path(comment) %></td>
     <td><%= link_to 'Destroy', comment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
@@ -24,4 +21,3 @@
 
 <br />
 
-<%= link_to 'New Comment', new_comment_path %>
