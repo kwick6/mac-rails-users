@@ -1,4 +1,10 @@
 MacRailsUsers::Application.routes.draw do
+
+resources :posts do
+    resources :comments
+  end
+
+
   get "home/index"
 
   devise_for :admins
