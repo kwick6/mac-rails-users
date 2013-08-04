@@ -8,7 +8,7 @@ resources :comments
 
 get '/all', :to => 'comments#index', :as => 'all'
 
-  get "home/index"
+#  get "home/index"
 
   devise_for :admins
 
